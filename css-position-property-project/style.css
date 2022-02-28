@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 200px;
+    width: 25%;
+    float: left;
+}
+
+.one{
+    background: red;
+}
+
+.two{
+    background: green;
+}
+
+.three{
+    background: blue;
+}
+
+.four{
+    background: yellow;
+}
+
+li{
+    height: 10px;
+    width: 30px;
+    float: right;
+}

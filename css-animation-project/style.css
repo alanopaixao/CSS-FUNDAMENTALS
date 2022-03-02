@@ -63,6 +63,10 @@ body {
     
 }
 
+.hero-text{
+    animation: slideFromTop 3s ease-in-out 1;
+}
+
 .hero-btn {
     border: #fff solid;
     background: none;
@@ -72,6 +76,8 @@ body {
     font-weight: 700;
     cursor: pointer;
     letter-spacing: 2px;
+
+    animation: slideFromBottom 3s ease-in-out 1;
 }
 
 .temp {
@@ -84,4 +90,28 @@ body {
         
         background: linear-gradient(to right, rgba(128, 62, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(img/coffee-bkg.jpg) center/cover;
     }
+}
+
+/* Animation */
+@keyframes slideFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
